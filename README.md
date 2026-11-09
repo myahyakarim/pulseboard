@@ -1,23 +1,18 @@
 # Pulseboard
 
-> Full-stack senior demo: **React ops UI + Node API** for service health and incident intake.
+React + Node status board for internal service health and lightweight incident intake.
 
-Fictional platform status board. Clean-room portfolio — no employer code or brands.
+## Problem
 
-## Why it belongs on a senior resume
+On-call engineers need a fast view of service health and a way to file an incident without opening five tools.
 
-- Clear API contract for an internal tool
-- TypeScript end-to-end
-- UI focused on **operations**, not marketing pages
-- Shows you can ship backend + frontend when the role needs it
+## Approach
 
-## Structure
+- Fastify API for service pulse + incident create
+- React UI with live refresh
+- Typed contracts end to end
 
-```text
-pulseboard/
-  server/   Fastify + Zod API
-  web/      React + Vite + TypeScript
-```
+Details: [ARCHITECTURE.md](./ARCHITECTURE.md)
 
 ## Run
 
@@ -29,7 +24,7 @@ cd server && npm install && npm run dev
 cd web && npm install && npm run dev
 ```
 
-Open the Vite URL (usually `http://127.0.0.1:5173`).
+UI: Vite default (`http://127.0.0.1:5173`) · API: `:3200`
 
 ## Stack
 

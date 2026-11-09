@@ -41,7 +41,7 @@ export function App() {
       body: JSON.stringify({ service_id: serviceId, summary }),
     });
     setSummary('');
-    alert('Incident recorded (demo).');
+    alert('Incident recorded.');
   }
 
   return (
